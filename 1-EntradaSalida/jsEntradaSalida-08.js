@@ -1,9 +1,21 @@
-/*
+/* Ramirez Luciano - Divison D - Grupo 3
 Debemos lograr tomar Los numeros por ID ,
 transformarlos a enteros (parseInt),realizar la operación correcta y 
 mostrar el resto entre el dividendo y el divisor.
 ej.: "El resto es 0 ."*/
 function SacarResto()
 {
-	alert("ok");
+	let num1
+	let num2
+	let resultado
+
+	num1=document.getElementById("txtIdNumeroDividendo").value
+	num1=parseInt(num1)
+
+	num2=document.getElementById("txtIdNumeroDivisor").value
+	num2=parseInt(num2)
+	
+	resultado=(num1 % num2)
+
+	alert("El resto es " + resultado);	
 }
